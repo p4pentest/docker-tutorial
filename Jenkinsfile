@@ -5,8 +5,8 @@ pipeline {
             steps {
                 //sh 'ls -ahl'
                 //echo 'Hello'
-                sh 'dock-compose -f docker-compose.yml build'
-                sh 'dock-compose -f docker-compose.yml up -d'
+                sh 'docker-compose -f docker-compose.yml build'
+                sh 'docker-compose -f docker-compose.yml up -d'
             }
         }
     }
